@@ -43,7 +43,6 @@ source venv/bin/activate
 - The project is configured to use postgresql.
 
 ```python
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -54,6 +53,19 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',
+    'library',
+    'drf_yasg',
+]
 ```
 
 ### 3. Apply Migrations
